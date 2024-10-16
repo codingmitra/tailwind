@@ -32,19 +32,21 @@ dart pub add tailwind
 ### Colors
 
 ```dart
-Tw.colors.cyan.shade500 // cyan-500
+Tw.colors.cyan.shade500 // *-cyan-500
+Tw.colors.purple.shade400 // *-purple-400
+Tw.colors.color(0xffbada55) // Same as Color(0xffbada55)
 ```
 
 ### Insets (Padding/Margin)
 
 ```dart
-Tw.insets.p4 // 16px all sides
-Tw.insets.p4.x // 16px horizontal
-Tw.insets.p4.y // 16px vertical
-Tw.insets.p4.t // 16px top
-Tw.insets.p4.b // 16px bottom
-Tw.insets.p4.l // 16px left
-Tw.insets.p4.r // 16px right
+Tw.insets.i4 // 16px all sides
+Tw.insets.i4.x // 16px horizontal
+Tw.insets.i4.y // 16px vertical
+Tw.insets.i4.t // 16px top
+Tw.insets.i4.b // 16px bottom
+Tw.insets.i4.l // 16px left
+Tw.insets.i4.r // 16px right
 ```
 
 ### Space (Gap between widgets in Row/Column)

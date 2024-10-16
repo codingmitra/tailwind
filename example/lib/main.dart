@@ -29,11 +29,12 @@ class MyApp extends StatelessWidget {
               ),
               // Use Tailwind spacing
               Tw.spaces.s4,
+              // Use custom space Tw.spaces.s
               Container(
                 width: 100,
                 height: 100,
                 // Use Tailwind spacing
-                padding: Tw.insets.p4,
+                padding: Tw.insets.i4,
                 // Use Tailwind colors
                 color: Tw.colors.purple.shade500,
                 child: Container(color: Tw.colors.teal.shade500),

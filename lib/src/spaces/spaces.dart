@@ -2,6 +2,12 @@ import 'space_model.dart';
 
 /// Use [TwSpaces] class to access Tailwind paddings/margins
 class TwSpaces {
+  /// [space] converts double [value] to [TwSpace]
+  /// ```dart
+  /// final space = Tw.spaces.space(0.5) // returns TwSpace(0.5);
+  /// ```
+  TwSpace space(double v) => TwSpace(v);
+
   /// Inset 0px
   final TwSpace s0 = const TwSpace(0);
 
