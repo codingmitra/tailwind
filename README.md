@@ -2,22 +2,23 @@ Inspired from TailwindCSS. It is a simple Tailwind utility library for Flutter, 
 
 ## Features
 
-### Utilities
+<!-- ### Utilities -->
 
 - [x] Color
-- [x] Inset // Use as Padding/Margin
-- [x] Space // Use as gap between widgets in Rows/Columns
+- [x] Inset // Use as Padding/Margin value
+- [x] Space // Use as SizedBox between widgets widgets
+- [x] Space between elements of List<Widget> // Use as gap between children of Row/Column or any List<Widget>
 - [ ] Size
 - [ ] Typography
 - [ ] Border
 
     ...more
 
-### Widgets
+<!-- ### Widgets
 
 - [ ] Flexbox
 
-    ...more
+    ...more -->
 
 List will be updated as this package progresses.
 
@@ -61,6 +62,16 @@ Tw.spaces.s4 // 16px space
 
 // Custom value
 Tw.spaces.space(0.5) // 0.5px space
+
+// Space between children of Row/Column or any List<Widget>
+Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+        Card(),
+        Card(),
+        Card(),
+    ].space(Tw.spaces.s4), // Gap between children
+),
 ```
 
 ## Additional information

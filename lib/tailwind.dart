@@ -4,6 +4,8 @@ import 'src/colors/colors.dart';
 import 'src/insets/insets.dart';
 import 'src/spaces/spaces.dart';
 
+export 'src/spaces/space_extension.dart';
+
 /// Use [Tw] class to access Tailwind utilities
 abstract class Tw {
   /// Get [TwColors] Tailwind colors

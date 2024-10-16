@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tailwind/tailwind.dart';
 
+import 'package:example/card.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,7 +31,6 @@ class MyApp extends StatelessWidget {
               ),
               // Use Tailwind spacing
               Tw.spaces.s4,
-              // Use custom space Tw.spaces.s
               Container(
                 width: 100,
                 height: 100,
@@ -38,6 +39,15 @@ class MyApp extends StatelessWidget {
                 // Use Tailwind colors
                 color: Tw.colors.purple.shade500,
                 child: Container(color: Tw.colors.teal.shade500),
+              ),
+              Tw.spaces.s4,
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const ExampleCard(),
+                  const ExampleCard(),
+                  const ExampleCard(),
+                ].space(Tw.spaces.s4),
               ),
             ],
           ),
