@@ -1,13 +1,17 @@
 library tailwind;
 
-import 'package:tailwind/colors/colors.dart';
-import 'package:tailwind/insets/insets.dart';
+import 'src/colors/colors.dart';
+import 'src/insets/insets.dart';
+import 'src/spaces/spaces.dart';
 
 /// Use [Tw] class to access Tailwind utilities
 abstract class Tw {
-  /// Access Tailwind colors
-  static TwColors get colors => TwColors();
+  /// Get [TwColors] Tailwind colors
+  static TwColors get colors => TwColors.instance;
 
-  /// Access Tailwind paddings/margins
-  static TwInsets get insets => TwInsets();
+  /// Get [TwInsets] Tailwind paddings/margins
+  static TwInsets get insets => TwInsets.instance;
+
+  /// Get [TwSpaces] Tailwind paddings/margins
+  static TwSpaces get spaces => TwSpaces.instance;
 }

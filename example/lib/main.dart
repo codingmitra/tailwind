@@ -24,14 +24,17 @@ class MyApp extends StatelessWidget {
               Container(
                 width: 100,
                 height: 100,
-                // Use Tailwind colors
-                color: Tw.colors.sky.shade500,
+                // Use custom color like this or Color(0xffbada55)
+                color: Tw.colors.color(0xffbada55),
               ),
+              // Use Tailwind spacing
+              Tw.spaces.s4,
               Container(
                 width: 100,
                 height: 100,
                 // Use Tailwind spacing
                 padding: Tw.insets.p4,
+                // Use Tailwind colors
                 color: Tw.colors.purple.shade500,
                 child: Container(color: Tw.colors.teal.shade500),
               ),

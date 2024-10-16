@@ -1,6 +1,6 @@
 name: tailwind
-description: "A simple Tailwind utility library for Flutter, enabling quick and efficient UI building with utility-first classes, making it easier to create clean and responsive designs."
-version: 0.0.5
+description: "Inspired from TailwindCSS. It is a simple Tailwind utility library for Flutter, enabling quick and efficient UI building with utility-first classes, making it easier to create beautiful designs."
+version: 0.0.6
 homepage: https://github.com/codingmitra/tailwind
 repository: https://github.com/codingmitra/tailwind
 issue_tracker: https://github.com/codingmitra/tailwind/issues
@@ -25,6 +25,5 @@ funding:
 
 topics:
   - tailwind
-  - colors
-  - utilities
-  - widget
+  - css
+  - flutter

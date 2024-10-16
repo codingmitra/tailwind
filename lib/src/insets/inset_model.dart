@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-/// [TwInset] class
+/// [TwInset] extends [EdgeInsets]
 class TwInset extends EdgeInsets {
   /// [v] value of inset
   final double v;

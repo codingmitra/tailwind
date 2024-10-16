@@ -1,4 +1,4 @@
-import 'package:tailwind/insets/inset_model.dart';
+import 'package:tailwind/src/insets/inset_model.dart';
 
 /// Use [TwInsets] class to access Tailwind paddings/margins
 class TwInsets {
@@ -107,9 +107,7 @@ class TwInsets {
   /// Inset 384px
   final TwInset p96 = TwInset(384);
 
+  /// Get instance of [TwInsets]
+  static final TwInsets instance = TwInsets._();
   TwInsets._();
-  static final TwInsets _instance = TwInsets._();
-
-  ///
-  factory TwInsets() => _instance;
 }

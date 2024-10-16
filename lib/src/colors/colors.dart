@@ -1,9 +1,15 @@
 import 'package:flutter/widgets.dart';
-import 'package:tailwind/colors/color_model.dart';
+import 'package:tailwind/src/colors/color_model.dart';
 
-/// [TwColors] class
+/// [TwColors] class containing all tailwind colors
 class TwColors {
-  /// [slate] corresponds to tailwind `Slate` colors
+  /// [color] converts ARGB hex color to [Color]
+  /// ```dart
+  /// final color = Tw.colors.color(0xff000000) // returns black;
+  /// ```
+  Color color(int hex) => Color(hex);
+
+  /// [slate] corresponds to tailwind `Slate` color
   final TwColor slate = const TwColor(
     Color(0xfff8fafc),
     Color(0xfff1f5f9),
@@ -18,7 +24,7 @@ class TwColors {
     Color(0xff020617),
   );
 
-  /// [gray] corresponds to tailwind `Gray` colors
+  /// [gray] corresponds to tailwind `Gray` color
   final TwColor gray = const TwColor(
     Color(0xfff9fafb),
     Color(0xfff3f4f6),
@@ -33,7 +39,7 @@ class TwColors {
     Color(0xff030712),
   );
 
-  /// [zinc] corresponds to tailwind `Zinc` colors
+  /// [zinc] corresponds to tailwind `Zinc` color
   final TwColor zinc = const TwColor(
     Color(0xfffafafa),
     Color(0xfff4f4f5),
@@ -48,7 +54,7 @@ class TwColors {
     Color(0xff09090b),
   );
 
-  /// [neutral] corresponds to tailwind `Neutral` colors
+  /// [neutral] corresponds to tailwind `Neutral` color
   final TwColor neutral = const TwColor(
     Color(0xfffafafa),
     Color(0xfff5f5f5),
@@ -63,7 +69,7 @@ class TwColors {
     Color(0xff0a0a0a),
   );
 
-  /// [stone] corresponds to tailwind `Stone` colors
+  /// [stone] corresponds to tailwind `Stone` color
   final TwColor stone = const TwColor(
     Color(0xfffafaf9),
     Color(0xfff5f5f4),
@@ -78,7 +84,7 @@ class TwColors {
     Color(0xff0c0a09),
   );
 
-  /// [red] corresponds to tailwind `Red` colors
+  /// [red] corresponds to tailwind `Red` color
   final TwColor red = const TwColor(
     Color(0xfffef2f2),
     Color(0xfffee2e2),
@@ -93,7 +99,7 @@ class TwColors {
     Color(0xff450a0a),
   );
 
-  /// [orange] corresponds to tailwind `Orange` colors
+  /// [orange] corresponds to tailwind `Orange` color
   final TwColor orange = const TwColor(
     Color(0xfffff7ed),
     Color(0xffffedd5),
@@ -108,7 +114,7 @@ class TwColors {
     Color(0xff431407),
   );
 
-  /// [amber] corresponds to tailwind `Amber` colors
+  /// [amber] corresponds to tailwind `Amber` color
   final TwColor amber = const TwColor(
     Color(0xfffffbeb),
     Color(0xfffef3c7),
@@ -123,7 +129,7 @@ class TwColors {
     Color(0xff451a03),
   );
 
-  /// [yellow] corresponds to tailwind `Yellow` colors
+  /// [yellow] corresponds to tailwind `Yellow` color
   final TwColor yellow = const TwColor(
     Color(0xfffefce8),
     Color(0xfffef9c3),
@@ -138,7 +144,7 @@ class TwColors {
     Color(0xff422006),
   );
 
-  /// [lime] corresponds to tailwind `Lime` colors
+  /// [lime] corresponds to tailwind `Lime` color
   final TwColor lime = const TwColor(
     Color(0xfff7fee7),
     Color(0xffecfccb),
@@ -153,7 +159,7 @@ class TwColors {
     Color(0xff1a2e05),
   );
 
-  /// [green] corresponds to tailwind `Green` colors
+  /// [green] corresponds to tailwind `Green` color
   final TwColor green = const TwColor(
     Color(0xfff0fdf4),
     Color(0xffdcfce7),
@@ -168,7 +174,7 @@ class TwColors {
     Color(0xff052e16),
   );
 
-  /// [emerald] corresponds to tailwind `Emerald` colors
+  /// [emerald] corresponds to tailwind `Emerald` color
   final TwColor emerald = const TwColor(
     Color(0xffecfdf5),
     Color(0xffd1fae5),
@@ -183,7 +189,7 @@ class TwColors {
     Color(0xff022c22),
   );
 
-  /// [teal] corresponds to tailwind `Teal` colors
+  /// [teal] corresponds to tailwind `Teal` color
   final TwColor teal = const TwColor(
     Color(0xfff0fdfa),
     Color(0xffccfbf1),
@@ -198,7 +204,7 @@ class TwColors {
     Color(0xff042f2e),
   );
 
-  /// [cyan] corresponds to tailwind `Cyan` colors
+  /// [cyan] corresponds to tailwind `Cyan` color
   final TwColor cyan = const TwColor(
     Color(0xffecfeff),
     Color(0xffcffafe),
@@ -213,7 +219,7 @@ class TwColors {
     Color(0xff083344),
   );
 
-  /// [sky] corresponds to tailwind `Sky` colors
+  /// [sky] corresponds to tailwind `Sky` color
   final TwColor sky = const TwColor(
     Color(0xfff0f9ff),
     Color(0xffe0f2fe),
@@ -228,7 +234,7 @@ class TwColors {
     Color(0xff082f49),
   );
 
-  /// [blue] corresponds to tailwind `Blue` colors
+  /// [blue] corresponds to tailwind `Blue` color
   final TwColor blue = const TwColor(
     Color(0xffeff6ff),
     Color(0xffdbeafe),
@@ -243,7 +249,7 @@ class TwColors {
     Color(0xff172554),
   );
 
-  /// [indigo] corresponds to tailwind `Indigo` colors
+  /// [indigo] corresponds to tailwind `Indigo` color
   final TwColor indigo = const TwColor(
     Color(0xffeef2ff),
     Color(0xffe0e7ff),
@@ -258,7 +264,7 @@ class TwColors {
     Color(0xff1e1b4b),
   );
 
-  /// [violet] corresponds to tailwind `Violet` colors
+  /// [violet] corresponds to tailwind `Violet` color
   final TwColor violet = const TwColor(
     Color(0xfff5f3ff),
     Color(0xffede9fe),
@@ -273,7 +279,7 @@ class TwColors {
     Color(0xff2e1065),
   );
 
-  /// [purple] corresponds to tailwind `Purple` colors
+  /// [purple] corresponds to tailwind `Purple` color
   final TwColor purple = const TwColor(
     Color(0xfffaf5ff),
     Color(0xfff3e8ff),
@@ -288,7 +294,7 @@ class TwColors {
     Color(0xff3b0764),
   );
 
-  /// [fuchsia] corresponds to tailwind `Fuchsia` colors
+  /// [fuchsia] corresponds to tailwind `Fuchsia` color
   final TwColor fuchsia = const TwColor(
     Color(0xfffdf4ff),
     Color(0xfffae8ff),
@@ -303,7 +309,7 @@ class TwColors {
     Color(0xff4a044e),
   );
 
-  /// [pink] corresponds to tailwind `Pink` colors
+  /// [pink] corresponds to tailwind `Pink` color
   final TwColor pink = const TwColor(
     Color(0xfffdf2f8),
     Color(0xfffce7f3),
@@ -318,7 +324,7 @@ class TwColors {
     Color(0xff500724),
   );
 
-  /// [rose] corresponds to tailwind `Rose` colors
+  /// [rose] corresponds to tailwind `Rose` color
   final TwColor rose = const TwColor(
     Color(0xfffff1f2),
     Color(0xffffe4e6),
@@ -333,8 +339,7 @@ class TwColors {
     Color(0xff4c0519),
   );
 
+  /// Instance of [TwColors]
+  static final TwColors instance = TwColors._();
   TwColors._();
-  static final TwColors _instance = TwColors._();
-  // ignore: public_member_api_docs
-  factory TwColors() => _instance;
 }
