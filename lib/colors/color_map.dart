@@ -1,6 +1,8 @@
+// ignore_for_file: unused_element
+
 import 'package:flutter/widgets.dart';
 
-var colorMap = {
+var _colorMap = {
   'slate': [
     const Color(0xfff8fafc),
     const Color(0xfff1f5f9),

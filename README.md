@@ -3,10 +3,10 @@ A simple tailwind utility library.
 ## Features
 
 - [x] Color
-- []  Spacing
-- []  Sizing
-- []  Typography
-- []  Border
+- [x] Spacing/Insets
+- [ ] Sizing
+- [ ] Typography
+- [ ] Border
 
 List will be updated as this package progresses.
 

@@ -17,21 +17,26 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: Scaffold(
-        body: Column(
-          children: [
-            Container(
-              width: 100,
-              height: 100,
-              // Use Tailwind colors
-              color: Tw.colors.sky.shade500,
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              // Use Tailwind colors
-              color: Tw.colors.purple.shade500,
-            ),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                // Use Tailwind colors
+                color: Tw.colors.sky.shade500,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                // Use Tailwind spacing
+                padding: Tw.insets.p4,
+                color: Tw.colors.purple.shade500,
+                child: Container(color: Tw.colors.teal.shade500),
+              ),
+            ],
+          ),
         ),
       ),
     );
