@@ -2,25 +2,20 @@ Inspired from TailwindCSS. It is a simple Tailwind utility library for Flutter, 
 
 ## Features
 
-<!-- ### Utilities -->
+### Utility classes
 
-- [x] Color
-- [x] Inset // Use as Padding/Margin value
-- [x] Space // Use as SizedBox between widgets widgets
-- [x] Space between elements of List<Widget> // Use as gap between children of Row/Column or any List<Widget>
+- [x] Tw.colors: All tailwind colors
+- [x] Tw.insets: All tailwind EdgeInsets for Padding/Margin
+- [x] Tw.spaces: All tailwind SizedBoxes for spacing between two widgets
 - [ ] Size
 - [ ] Typography
 - [ ] Border
 
-    ...more
+### Extensions
 
-<!-- ### Widgets
+- [x] <Widget>[].space(): Helper extension for gap between children of Row/Column or any <Widget>[]
 
-- [ ] Flexbox
-
-    ...more -->
-
-List will be updated as this package progresses.
+    ... list will be updated as this package progresses.
 
 ## Installation
 
@@ -33,6 +28,7 @@ dart pub add tailwind
 ### Colors
 
 ```dart
+Tw.colors.cyan // same as shade500 or *-cyan-500
 Tw.colors.cyan.shade500 // *-cyan-500
 Tw.colors.purple.shade400 // *-purple-400
 
@@ -65,12 +61,12 @@ Tw.spaces.space(0.5) // 0.5px space
 
 // Space between children of Row/Column or any List<Widget>
 Row(
-    mainAxisSize: MainAxisSize.min,
-    children: [
-        Card(),
-        Card(),
-        Card(),
-    ].space(Tw.spaces.s4), // Gap between children
+  mainAxisSize: MainAxisSize.min,
+  children: [
+      Card(),
+      Card(),
+      Card(),
+  ].space(Tw.spaces.s4), // Gap between children
 ),
 ```
 

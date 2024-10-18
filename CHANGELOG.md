@@ -1,4 +1,4 @@
-## 0.0.5 - 2024-10-16
+## 0.0.6 - 2024-10-16
 
 * Added custom color support
 * Added space support

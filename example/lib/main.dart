@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
                 // Use Tailwind spacing
                 padding: Tw.insets.i4,
                 // Use Tailwind colors
-                color: Tw.colors.purple.shade500,
+                color: Tw.colors.purple,
                 child: Container(color: Tw.colors.teal.shade500),
               ),
               Tw.spaces.s4,

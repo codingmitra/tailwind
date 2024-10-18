@@ -13,5 +13,8 @@ extension TwSpaceExtension on List<Widget> {
   ///   ].space(Tw.spaces.s2),
   /// )
   /// ```
-  List<Widget> space(TwSpace v) => indexed.map((el) => el.$1 == 0 ? [el.$2] : [v, el.$2]).expand<Widget>((e) => e).toList();
+  List<Widget> space(TwSpace v) => indexed
+      .map((el) => el.$1 == 0 ? [el.$2] : [v, el.$2])
+      .expand<Widget>((e) => e)
+      .toList();
 }

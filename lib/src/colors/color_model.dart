@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 /// [TwColor] class
-class TwColor {
+class TwColor extends Color {
   /// [shade50] correponds to *-color-50
   final Color shade50;
 
@@ -36,7 +36,7 @@ class TwColor {
   final Color shade950;
 
   /// [TwColor] constructor
-  const TwColor(
+  TwColor(
     this.shade50,
     this.shade100,
     this.shade200,
@@ -48,5 +48,5 @@ class TwColor {
     this.shade800,
     this.shade900,
     this.shade950,
-  );
+  ) : super(shade500.value);
 }
