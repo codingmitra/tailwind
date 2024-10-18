@@ -1,3 +1,7 @@
+## 0.0.7 - 2024-10-16
+
+* Updated documentation
+
 ## 0.0.6 - 2024-10-16
 
 * Added custom color support
